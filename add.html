@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>   
+    .h3{
+        color: black;
+    }
+    h3:hover{
+        color:blue;
+    }
+    b{
+        font-weight: 20px;
+    }
+ 
+</style>
+<body>
+    <center><h2>Add Number Using JavaScript</h2></center>
+    <nav class="main_nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="time-table.html">Time Table</a></li>
+                <li><a href="bio-data.html">Bio</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="syllabus.html">Syllabus</a></li>
+                <li><a href="form.html">Register</a></li>
+                <li><a href="map.html">Image Map</a></li>
+                <li class="active"><a href="add.html">Add</a></li>
+            </ul>
+    </nav> <br><br>
+    <!-- add two num -->
+    <div>
+        <label for="fnum">First Num:</label>
+        <input id="fnum" ><br><br>
+        <label for="snum">Second Num:</label>
+        <input id="snum"><br><br>
+        <button onclick="Add()">Add</button><br><br>
+        <label for="sum">Output</label>
+        <input id="sum"><br>
+    </div>        
+</body>
+<script>        
+    function Add()
+    {
+        var a,b,c;
+        a=Number(document.getElementById("fnum").value);
+        b=Number(document.getElementById("snum").value);
+        c=a+b;
+        document.getElementById("sum").value=c;
+    }    
+        
+</script>
+</html>

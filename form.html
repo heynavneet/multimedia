@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<!--    <script src="base.js"></script>-->
+</head>
+
+<body>
+    <center><h2>Registration Page</h2></center>
+    
+    <nav class="main_nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="time-table.html">Time Table</a></li>
+            <li><a href="bio-data.html">Bio</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li class="active"><a href="form.html">Register</a></li>
+            <li><a href="map.html">Image Map</a></li>
+            <li><a href="add.html">Add</a></li>
+        </ul>
+     </nav> 
+     <br><br>
+<br><br>
+<div class="basic_details" style="background-color: white; ">
+   <form style="margin-left: 20px; padding-bottom: 40px;" name="reg_form" onsubmit="return validate()" action="#"  >
+   <h3>Registration Form</h3><br>
+    <label for="f_name">First Name:</label>
+    <input type="text" name="f_name" placeholder="First Name" value=""><br><br>
+    
+    <label for="l_name">Last Name:</label>
+    <input type="text" placeholder="Last name" name="l_name"><br><br>
+    
+    <label for="age">Age:</label>
+    <input type="text" placeholder="Age" name="age"><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" placeholder="Age" name="email"><br><br>
+    
+    <label for="gender">Gender:</label>
+    <select name="gender" id="">
+        <option value="">Select</option>
+        <option value="">Male</option>
+        <option value="">Female</option>
+    </select> <br><br>
+    
+    <label for="address">Address:</label>
+    <textarea name="address" placeholder="Enter Your address" id="" cols="30" rows="3"></textarea>
+    <br><br>
+    <input type="submit" onclick="">
+    </form>   
+</div>     
+
+<div class="#personal_detail" style="float: right">
+     <fieldset style="background-color: white; " >
+        <h3>Personal Details</h3>
+      <label for="">Eduactaion: </label>
+      <select name="education" id="">
+          <option value="">10th</option>
+          <option value="">12th</option>
+          <option value="">Graduation </option>
+          <option value="">Post Graduation </option>
+      </select>
+      <br><br>
+      <label for="">School/College:</label>
+      <textarea name="" id="" cols="30" placeholder="Enter You School/college name" rows="1"></textarea><br><br>
+      <label for="">Hobby:</label><br>
+        &nbsp &nbsp<input type="checkbox">Playing <br>
+        &nbsp &nbsp<input type="checkbox">Reading <br>
+        &nbsp &nbsp<input type="checkbox">Cooking <br>
+        &nbsp &nbsp<input type="checkbox">Learning <br>
+        &nbsp &nbsp<input type="checkbox">Dancing <br>
+        &nbsp &nbsp<input type="checkbox">Singing <br>
+        &nbsp &nbsp<input type="checkbox">Hiking <br>
+        &nbsp &nbsp<input type="checkbox">Painting <br>
+        &nbsp &nbsp<input type="checkbox">Writing <br>
+      </fieldset>  
+       
+</div>          
+      
+</body>
+<script>
+    function validate()
+    {
+        var fname = document.forms["reg_form"]["f_name"].value;
+        var lname = document.forms["reg_form"]["l_name"].value;
+        var age = document.form["reg_form"][""]
+        if (fname =="")
+        {
+            alert("First Name is Blank");
+            return false;
+        }
+        if (lname =="")
+            {
+                alert("Last Name is Blank");
+                return false;
+            }
+    }
+</script>
+</html>

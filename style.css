@@ -1,0 +1,67 @@
+  body{
+        /* background-image: url("https://previews.123rf.com/images/castecodesign/castecodesign1606/castecodesign160600571/58420978-vintage-elegant-lily-flower-ornament-pattern-luxury-texture-for-wallpapers-backgrounds-and-invitatio.jpg"); */
+        background-color: #f2f2f2;
+    }
+    
+    table, tr, th, td{
+        border: 2px solid black;
+        border-collapse: collapse
+    }
+    .s{
+        font-size: 10px;
+    }
+    
+.profile{
+    border: 2px solid black;
+    max-width: 125px;
+    margin: auto;
+    
+}
+
+.bio{
+    text-align: center;
+}
+.basic_details{
+    border: 2px solid grey; 
+    width: 400px; 
+    height: auto;
+    display: inline-block;
+}
+.personal_detail{
+    border: 2px solid grey; 
+    width: 400px; 
+    height: auto;
+    display: inline-block;
+}
+/*navigation style*/
+.main_nav{
+    /* background-color: white; */
+}
+.main_nav ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+.main_nav li{
+    float: left;
+    border-right: 0.3px solid white;
+}
+
+.main_nav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 7px;
+}
+.main_nav a:hover{
+    background-color: #f2f2f2;
+    color: black;
+}
+.main_nav .active a{
+    background-color: #f2f2f2;
+    color: black;
+}
